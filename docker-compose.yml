@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  database:
+    image: mariadb:10.5
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: my-secret-pw
+      MYSQL_DATABASE: ferrosuministros
+      MYSQL_USER: ferrosuministros
+      MYSQL_PASSWORD: ferrosuministros
