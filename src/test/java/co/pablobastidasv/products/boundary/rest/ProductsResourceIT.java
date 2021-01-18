@@ -14,10 +14,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @QuarkusTest
 @Tag("integration")
-public class ProductResourceIT {
+public class ProductsResourceIT {
 
   @Inject
-  ProductResource productResource;
+  ProductsResource productResource;
 
   @Test
   @DisplayName("Create a product")
