@@ -32,7 +32,7 @@ public class Transaction extends PanacheEntityBase {
   public void postPersist() {
     log.debug("updating product");
     Product product = Product.findById(this.product.id);
-    product.quantity = type.operation.process(product, quantity);
+    product.quantity = type.operation().process(product, quantity);
   }
 
   public enum Type {
